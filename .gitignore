@@ -1,5 +1,7 @@
 .gradle
 build/
+.idea/
+src/main/resources/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/

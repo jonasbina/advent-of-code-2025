@@ -61,7 +61,7 @@ fun getInput(day: Int):String {
     // Replace with your actual session cookie value
     val sessionCookie = File("session.txt").readText()
 
-    val url = "https://adventofcode.com/2024/day/$day/input"
+    val url = "https://adventofcode.com/2025/day/$day/input"
     val request = Request.Builder()
         .url(url)
         .addHeader("Cookie", "session=$sessionCookie")
