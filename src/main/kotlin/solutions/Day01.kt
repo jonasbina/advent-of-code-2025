@@ -75,14 +75,15 @@ class Day01(
     ): Pair<Int, Int> {
         val actualAmount = amount % 100
         val sum = currentNumber + actualAmount
-        if (sum in minNumber..maxNumber) return sum to abs(amount / 100)
+        val fullRotations =  abs(amount / 100)
+        if (sum in minNumber..maxNumber) return sum to fullRotations
         if (sum < minNumber) {
             val result = maxNumber + 1 + sum
-            val howManyTimes = if (result != 0 && currentNumber != 0) 1 + abs(amount / 100) else abs(amount / 100)
+            val howManyTimes = if (result != 0 && currentNumber != 0) 1 + fullRotations else fullRotations
             return result to howManyTimes
         }
         val result = minNumber + sum % 100
-        val howManyTimes = if (result != 0 && currentNumber != 0) 1 + abs(amount / 100) else abs(amount / 100)
+        val howManyTimes = if (result != 0 && currentNumber != 0) 1 + fullRotations else fullRotations
         return result to howManyTimes
     }
 }
