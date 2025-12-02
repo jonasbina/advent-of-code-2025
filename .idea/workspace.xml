@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8dd8caa-fa75-4e4f-9991-6ac7277febbe" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="b8dd8caa-fa75-4e4f-9991-6ac7277febbe" name="Changes" comment="day 2">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/solutions/Day01_bruteforce.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,23 +22,23 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "jonasbina"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;jonasbina&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/jonasbina/advent-of-code-2025.git",
-    "accountId": "7ad8444f-644a-4094-9aa2-0126661877c8"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/jonasbina/advent-of-code-2025.git&quot;,
+    &quot;accountId&quot;: &quot;7ad8444f-644a-4094-9aa2-0126661877c8&quot;
   }
-}]]></component>
+}</component>
   <component name="GradleScriptDefinitionsStorage" workingDir="$PROJECT_DIR$" gradleHome="$USER_HOME$/.gradle/wrapper/dists/gradle-8.10-bin/deqhafrv1ntovfmgh0nh3npr9/gradle-8.10" javaHome="$USER_HOME$/Library/Java/JavaVirtualMachines/corretto-21.0.5/Contents/Home" gradleVersion="8.10" />
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="36FKAOWlJqrYWIIZCubGYABodjh" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -48,11 +48,15 @@
   "keyToString": {
     "Gradle.advent-of-code-2025 [:com.jonasbina.MainKt.main()].executor": "Run",
     "Gradle.advent-of-code-2025 [:com.jonasbina.solutions.Day01Kt.main()].executor": "Run",
+    "Gradle.advent-of-code-2025 [:com.jonasbina.solutions.Day01_bruteforceKt.main()].executor": "Run",
+    "Gradle.advent-of-code-2025 [:com.jonasbina.solutions.Day02Kt.main()].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "kobweb-plugin-state": "DISABLED",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/jonasbina/projects/advent-of-code-2025/src/main/kotlin/solutions",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -62,6 +66,25 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/kotlin/solutions" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Day02Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jonasbina.solutions.Day02Kt" />
+      <module name="advent-of-code-2025.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Kotlin.Day02Kt" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -77,11 +100,35 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1764596734908</updated>
-      <workItem from="1764596736331" duration="4429000" />
+      <workItem from="1764596736331" duration="5385000" />
+      <workItem from="1764605409476" duration="722000" />
+      <workItem from="1764673670649" duration="1908000" />
     </task>
+    <task id="LOCAL-00001" summary="day 1">
+      <option name="closed" value="true" />
+      <created>1764604060377</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1764604060377</updated>
+    </task>
+    <task id="LOCAL-00002" summary="at least a bit prettier">
+      <option name="closed" value="true" />
+      <created>1764604653988</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1764604653988</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="day 1" />
+    <MESSAGE value="at least a bit prettier" />
+    <option name="LAST_COMMIT_MESSAGE" value="at least a bit prettier" />
   </component>
 </project>
