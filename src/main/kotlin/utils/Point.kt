@@ -48,6 +48,8 @@ data class Point2D(val x: Int, val y: Int) {
     fun isInRange(xsize: Int, ysize: Int = xsize): Boolean = x < xsize && y < ysize && x >= 0 && y >= 0
     fun neighbors(): List<Point2D> =
         listOf(up(), down(), left(), right())
+    fun neighborsWithDiagonal(): List<Point2D> =
+        listOf(up(), down(), left(), right(), upLeft(), upRight(), downLeft(), downRight())
 
     fun adjacent(): List<Point2D> =
         listOf(up(), down(), left(), right(), upLeft(), upRight(), downLeft(), downRight())

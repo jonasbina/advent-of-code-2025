@@ -10,15 +10,19 @@ object InputUtils {
     fun getDayInputLines(day: Int): List<String> {
         return getDayInputFile(day).readLines()
     }
+
     fun getTestInputText(day: Int): Input {
         return Input(getTestInputFile(day).readText())
     }
+
     private fun getDayInputFile(day: Int): File {
         return File("src/main/resources/day${day.toString().padStart(2, '0')}/input.txt")
     }
+
     private fun getTestInputFile(day: Int): File {
         return File("src/main/resources/day${day.toString().padStart(2, '0')}/test.txt")
     }
+
     fun getTestInputLines(day: Int): List<String> {
         return getTestInputFile(day).readLines()
     }
@@ -30,6 +34,7 @@ object InputUtils {
             append(".txt")
         }
     }
+
     private fun getTestInputFileName(day: Int): String {
         return buildString {
             append("test")
@@ -38,13 +43,19 @@ object InputUtils {
         }
     }
 }
+
 data class Input(
-    val input:String,
-){
+    val input: String,
+) {
     val inputLines = input.split('\n')
     val inputInts = inputLines.map { it.toIntOrNull() ?: 0 }
 }
+
 data class Inputs(
-    val input:Input,
+    val input: Input,
     val testInput: Input
-)
+) {
+    fun <R> map(transform: (Input) -> R) = listOf(input, testInput).map(transform)
+}
+
+fun <R> List<R>.getBasedOnTest(test: Boolean) = if (test) this[1] else this[0]

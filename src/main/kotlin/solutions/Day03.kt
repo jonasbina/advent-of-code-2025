@@ -4,6 +4,8 @@ import com.jonasbina.utils.Day
 import com.jonasbina.utils.Input
 import com.jonasbina.utils.InputUtils
 import com.jonasbina.utils.Inputs
+import com.jonasbina.utils.getBasedOnTest
+import kotlin.text.map
 
 fun main() {
     val input = InputUtils.getDayInputText(3)
@@ -15,21 +17,15 @@ fun main() {
 class Day03(
     override val inputs: Inputs
 ) : Day(inputs) {
-    override fun part1(test: Boolean): Long {
-        val input = if (test) inputs.testInput else inputs.input
-        val digits = getDigits(input)
-        return getJoltage(digits, 2)
+    val inputDigits = inputs.map {
+        it.inputLines.map {
+            it.map { c -> c.digitToInt() }
+        }
     }
 
-    override fun part2(test: Boolean): Long {
-        val input = if (test) inputs.testInput else inputs.input
-        val digits = getDigits(input)
-        return getJoltage(digits, 12)
-    }
+    override fun part1(test: Boolean): Long = getJoltage(inputDigits.getBasedOnTest(test), 2)
 
-    fun getDigits(input: Input) = input.inputLines.map {
-        it.map { c -> c.digitToInt() }
-    }
+    override fun part2(test: Boolean): Long = getJoltage(inputDigits.getBasedOnTest(test), 12)
 
     fun getJoltage(digits: List<List<Int>>, digitAmount: Int): Long = digits.sumOf {
         val numbers = mutableListOf<Int>()
