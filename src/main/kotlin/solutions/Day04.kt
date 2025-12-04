@@ -5,6 +5,7 @@ import com.jonasbina.utils.InputUtils
 import com.jonasbina.utils.Inputs
 import com.jonasbina.utils.Point2D
 import com.jonasbina.utils.getBasedOnTest
+import java.awt.Point
 
 fun main() {
     val input = InputUtils.getDayInputText(4)
@@ -40,32 +41,43 @@ class Day04(
         return sum
     }
 
+    // Marginally faster than the last version at triple the complexity, but I like it.
+    // (40ms instead of 70ms)
     override fun part2(test: Boolean): Any {
         val map = maps.getBasedOnTest(test)
-        var sum = 0
-        while (true) {
-            val list = mutableListOf<Point2D>()
-            map.forEachIndexed { y, line ->
-                line.forEachIndexed { x, char ->
-                    if (char == '@') {
-                        val point = Point2D(x, y)
-                        val neighbors = point.neighborsWithDiagonal().filter { it.isInRange(map[0].size, map.size) }
-                            .count { map.atPoint(it) == '@' }
-                        if (neighbors < 4) {
-                            list.add(point)
-                        }
+        val removedPoints = mutableSetOf<Point2D>()
+        val mapPoints = mutableMapOf<Point2D, List<Point2D>>()
+        map.forEachIndexed { y, line ->
+            line.forEachIndexed { x, char ->
+                if (char == '@') {
+                    val point = Point2D(x, y)
+                    val neighbors = point.neighborsWithDiagonal().filter { it.isInRange(map[0].size, map.size) }
+                        .filter { map.atPoint(it) == '@' }
+                    if (neighbors.size < 4) {
+                        removedPoints.add(point)
+                    } else {
+                        mapPoints[point] = neighbors
                     }
                 }
             }
-            if (list.isEmpty()) {
+        }
+        while (true){
+            val toRemove = mutableListOf<Point2D>()
+            mapPoints.forEach { (point, list) ->
+                if (list.count { it !in removedPoints } < 4) {
+                    removedPoints.add(point)
+                    toRemove.add(point)
+                }
+            }
+            toRemove.forEach { point ->
+                mapPoints.remove(point)
+            }
+            if (toRemove.isEmpty()){
                 break
             }
-            sum += list.size
-            list.forEach {
-                map[it.y][it.x] = '.'
-            }
         }
-        return sum
+
+        return removedPoints.size
     }
 }
 

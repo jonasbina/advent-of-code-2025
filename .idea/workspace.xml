@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8dd8caa-fa75-4e4f-9991-6ac7277febbe" name="Changes" comment="day 3">
+    <list default="true" id="b8dd8caa-fa75-4e4f-9991-6ac7277febbe" name="Changes" comment="day 4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/solutions/Day02.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/solutions/Day02.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/solutions/Day03.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/solutions/Day03.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/utils/Day.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/utils/Day.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/utils/Input.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/utils/Input.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/utils/Point.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/utils/Point.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/solutions/Day04.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/solutions/Day04.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +139,7 @@
       <workItem from="1764695272330" duration="605000" />
       <workItem from="1764778282362" duration="877000" />
       <workItem from="1764784275871" duration="3717000" />
-      <workItem from="1764858267554" duration="1055000" />
+      <workItem from="1764858267554" duration="2559000" />
     </task>
     <task id="LOCAL-00001" summary="day 1">
       <option name="closed" value="true" />
@@ -177,7 +173,23 @@
       <option name="project" value="LOCAL" />
       <updated>1764779152960</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="day 4">
+      <option name="closed" value="true" />
+      <created>1764859348907</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1764859348907</updated>
+    </task>
+    <task id="LOCAL-00006" summary="day 4">
+      <option name="closed" value="true" />
+      <created>1764859958369</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1764859958369</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,6 +200,7 @@
     <MESSAGE value="at least a bit prettier" />
     <MESSAGE value="day 2" />
     <MESSAGE value="day 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="day 3" />
+    <MESSAGE value="day 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="day 4" />
   </component>
 </project>
