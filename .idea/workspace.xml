@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8dd8caa-fa75-4e4f-9991-6ac7277febbe" name="Changes" comment="day 4">
+    <list default="true" id="b8dd8caa-fa75-4e4f-9991-6ac7277febbe" name="Changes" comment="improved day 4 :)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/solutions/Day04.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/solutions/Day04.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +50,7 @@
     "Gradle.advent-of-code-2025 [:com.jonasbina.solutions.Day02Kt.main()].executor": "Run",
     "Gradle.advent-of-code-2025 [:com.jonasbina.solutions.Day03Kt.main()].executor": "Run",
     "Gradle.advent-of-code-2025 [:com.jonasbina.solutions.Day04Kt.main()].executor": "Run",
+    "Gradle.advent-of-code-2025 [:com.jonasbina.solutions.Day05Kt.main()].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -72,16 +72,9 @@
       <recent name="$PROJECT_DIR$/src/main/kotlin/solutions" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.Day04Kt">
+  <component name="RunManager" selected="Kotlin.Day05Kt">
     <configuration name="Day01Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.jonasbina.solutions.Day01Kt" />
-      <module name="advent-of-code-2025.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Day01_bruteforceKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jonasbina.solutions.Day01_bruteforceKt" />
       <module name="advent-of-code-2025.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -101,6 +94,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Day05Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jonasbina.solutions.Day05Kt" />
+      <module name="advent-of-code-2025.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.jonasbina.MainKt" />
       <module name="advent-of-code-2025.main" />
@@ -110,11 +110,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.Day05Kt" />
         <item itemvalue="Kotlin.Day04Kt" />
         <item itemvalue="Kotlin.MainKt" />
         <item itemvalue="Kotlin.Day03Kt" />
         <item itemvalue="Kotlin.Day01Kt" />
-        <item itemvalue="Kotlin.Day01_bruteforceKt" />
       </list>
     </recent_temporary>
   </component>
@@ -139,7 +139,8 @@
       <workItem from="1764695272330" duration="605000" />
       <workItem from="1764778282362" duration="877000" />
       <workItem from="1764784275871" duration="3717000" />
-      <workItem from="1764858267554" duration="2559000" />
+      <workItem from="1764858267554" duration="2577000" />
+      <workItem from="1764942279462" duration="6530000" />
     </task>
     <task id="LOCAL-00001" summary="day 1">
       <option name="closed" value="true" />
@@ -189,7 +190,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764859958369</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="improved day 4 :)">
+      <option name="closed" value="true" />
+      <created>1764860844402</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1764860844402</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,6 +210,7 @@
     <MESSAGE value="day 2" />
     <MESSAGE value="day 3" />
     <MESSAGE value="day 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="day 4" />
+    <MESSAGE value="improved day 4 :)" />
+    <option name="LAST_COMMIT_MESSAGE" value="improved day 4 :)" />
   </component>
 </project>
