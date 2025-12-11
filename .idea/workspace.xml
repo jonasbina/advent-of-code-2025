@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8dd8caa-fa75-4e4f-9991-6ac7277febbe" name="Changes" comment="improved day 4 :)">
+    <list default="true" id="b8dd8caa-fa75-4e4f-9991-6ac7277febbe" name="Changes" comment="day 7">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/solutions/Day07.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/solutions/Day07.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,81 +43,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.advent-of-code-2025 [:com.jonasbina.MainKt.main()].executor": "Run",
-    "Gradle.advent-of-code-2025 [:com.jonasbina.solutions.Day01Kt.main()].executor": "Run",
-    "Gradle.advent-of-code-2025 [:com.jonasbina.solutions.Day01_bruteforceKt.main()].executor": "Run",
-    "Gradle.advent-of-code-2025 [:com.jonasbina.solutions.Day02Kt.main()].executor": "Run",
-    "Gradle.advent-of-code-2025 [:com.jonasbina.solutions.Day03Kt.main()].executor": "Run",
-    "Gradle.advent-of-code-2025 [:com.jonasbina.solutions.Day04Kt.main()].executor": "Run",
-    "Gradle.advent-of-code-2025 [:com.jonasbina.solutions.Day05Kt.main()].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "kobweb-plugin-state": "DISABLED",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/jonasbina/projects/advent-of-code-2025/src/main/kotlin/solutions",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "ml.llm.LLMConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.advent-of-code-2025 [:com.jonasbina.MainKt.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.advent-of-code-2025 [:com.jonasbina.solutions.Day01Kt.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.advent-of-code-2025 [:com.jonasbina.solutions.Day01_bruteforceKt.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.advent-of-code-2025 [:com.jonasbina.solutions.Day02Kt.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.advent-of-code-2025 [:com.jonasbina.solutions.Day03Kt.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.advent-of-code-2025 [:com.jonasbina.solutions.Day04Kt.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.advent-of-code-2025 [:com.jonasbina.solutions.Day05Kt.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.advent-of-code-2025 [:com.jonasbina.solutions.Day06Kt.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.advent-of-code-2025 [:com.jonasbina.solutions.Day07Kt.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.advent-of-code-2025 [:com.jonasbina.solutions.Day08Kt.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.advent-of-code-2025 [:com.jonasbina.solutions.Day09Kt.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.advent-of-code-2025 [:com.jonasbina.solutions.Day10Kt.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.advent-of-code-2025 [:com.jonasbina.solutions.Day11Kt.main()].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kobweb-plugin-state&quot;: &quot;DISABLED&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/jonasbina/projects/advent-of-code-2025/src/main/kotlin/solutions&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;ml.llm.LLMConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/kotlin/solutions" />
     </key>
-  </component>
-  <component name="RunManager" selected="Kotlin.Day05Kt">
-    <configuration name="Day01Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jonasbina.solutions.Day01Kt" />
-      <module name="advent-of-code-2025.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Day03Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jonasbina.solutions.Day03Kt" />
-      <module name="advent-of-code-2025.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Day04Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jonasbina.solutions.Day04Kt" />
-      <module name="advent-of-code-2025.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Day05Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jonasbina.solutions.Day05Kt" />
-      <module name="advent-of-code-2025.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jonasbina.MainKt" />
-      <module name="advent-of-code-2025.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Kotlin.Day05Kt" />
-        <item itemvalue="Kotlin.Day04Kt" />
-        <item itemvalue="Kotlin.MainKt" />
-        <item itemvalue="Kotlin.Day03Kt" />
-        <item itemvalue="Kotlin.Day01Kt" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -140,7 +102,13 @@
       <workItem from="1764778282362" duration="877000" />
       <workItem from="1764784275871" duration="3717000" />
       <workItem from="1764858267554" duration="2577000" />
-      <workItem from="1764942279462" duration="6530000" />
+      <workItem from="1764942279462" duration="7359000" />
+      <workItem from="1765010830375" duration="4039000" />
+      <workItem from="1765096080552" duration="5804000" />
+      <workItem from="1765208161576" duration="3917000" />
+      <workItem from="1765373177326" duration="20928000" />
+      <workItem from="1765462305283" duration="9866000" />
+      <workItem from="1765481714333" duration="2077000" />
     </task>
     <task id="LOCAL-00001" summary="day 1">
       <option name="closed" value="true" />
@@ -198,7 +166,31 @@
       <option name="project" value="LOCAL" />
       <updated>1764860844402</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="day 5">
+      <option name="closed" value="true" />
+      <created>1764949085272</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1764949085272</updated>
+    </task>
+    <task id="LOCAL-00009" summary="day 6">
+      <option name="closed" value="true" />
+      <created>1765014882816</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1765014882816</updated>
+    </task>
+    <task id="LOCAL-00010" summary="day 7">
+      <option name="closed" value="true" />
+      <created>1765098193068</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1765098193068</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,6 +203,9 @@
     <MESSAGE value="day 3" />
     <MESSAGE value="day 4" />
     <MESSAGE value="improved day 4 :)" />
-    <option name="LAST_COMMIT_MESSAGE" value="improved day 4 :)" />
+    <MESSAGE value="day 5" />
+    <MESSAGE value="day 6" />
+    <MESSAGE value="day 7" />
+    <option name="LAST_COMMIT_MESSAGE" value="day 7" />
   </component>
 </project>

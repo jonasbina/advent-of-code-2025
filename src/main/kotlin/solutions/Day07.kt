@@ -54,7 +54,6 @@ class Day07(
         val startPoint = startPoints.getBasedOnTest(test)
 
         var beams = setOf(startPoint to 1L)
-        var amount = 0L
         while (beams.isNotEmpty()) {
             val newBeams = mutableListOf<Pair<Point2D, Long>>()
             beams.forEach { (beam, amount) ->
@@ -68,12 +67,12 @@ class Day07(
                     newBeams.add(down.right() to amount)
                 }
             }
-            beams = newBeams.groupBy { it.first }.map { it.key to it.value.sumOf { value -> value.second } }.toSet()
-            if (beams.isNotEmpty()) {
-                amount = beams.sumOf { it.second }
+            if (newBeams.isEmpty()) {
+                return beams.sumOf { it.second }
             }
+            beams = newBeams.groupBy { it.first }.map { it.key to it.value.sumOf { value -> value.second } }.toSet()
         }
-        return amount
+        return 0L
     }
 }
 
